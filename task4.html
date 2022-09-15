@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-4</title>
+    <style>
+
+        *
+        {
+            box-sizing: border-box;    
+        }
+        .header
+        {
+            background-color: coral;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid black;
+            font-size: 40px;
+        }
+
+        .column 
+        {
+            float: left;
+            background-color: orange;
+            width: 50%;
+            padding-left: 10px;
+        }
+
+        .box
+        {
+            display: flex;
+        }
+
+        .box1
+        {
+            background-color: blue;
+            color: white;
+            border: 3px solid black;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        .top 
+        {
+            overflow: hidden;
+        }
+
+        top::after 
+        {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .test
+        {
+            padding-bottom: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <h2>Header Title</h2>
+    </div>
+    <div class="top">
+        <div class ="column">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis deleniti fugiat iste ipsum odio fugit aliquam eveniet exercitationem, inventore eius harum, laudantium dolore repellendus.</p>
+        </div>    
+        <div class="column test">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod omnis, perspiciatis impedit consectetur, temporibus, dolorem a amet aliquam ipsam autem ad modi fugit accusamus.</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam reprehenderit officia incidunt voluptatem quibusdam quaerat.</p>
+        </div>
+        <div class="box1">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A placeat commodi aspernatur eveniet repellat. Error.</p>
+        </div>
+        <div class="box1">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam doloremque quisquam porro nisi dolor optio?</p>
+        </div>
+        <div class="box1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus doloremque laudantium iusto</p>
+        </div>
+    </div>
+
+</body>
+</html>
